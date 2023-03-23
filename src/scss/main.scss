@@ -45,46 +45,6 @@ body {
   overflow: hidden;
 }
 
-popup-container{
-  position: absolute;
-  top: -1080px;
-  left: 200px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  width: 500px;
-  height: 95vh;
-  color: $white;
-  background-color: $translucent-black;
-  transition: top 1s;
-
-  content-body {
-    flex-grow: 1;
-    h1 {
-      font-family: 'Gloock', serif;
-      font-kerning: none;
-    }
-    p {
-      line-height: 1.3em;
-    }
-  }
-  tour-nav-container {
-    display: flex;
-    justify-content: space-between;
-    
-    button {
-      padding: 5px;
-      border: none;
-      background: none;
-      color: $white;
-      cursor: pointer;
-    }
-    &.top-nav {
-      flex-direction: row-reverse;
-    }
-  }
-}
-
 language-selector {
   button {
     border: none;
@@ -98,59 +58,6 @@ language-selector {
   }
 }
 
-nav-container {
-  position: absolute;
-  left: 5px;
-  top: 5px;
-  display: flex;
-  transition: top 1s;
-
-  &.hidden {
-    top: -60px;
-  }
-
-  button {
-    padding: 10px;
-    border: 2px solid #505050;
-    font-size: 1.2em;
-    color: $white;
-    background-color: #505050;
-    cursor: pointer;
-    &:active {
-      border: 2px solid $white;
-    }
-  }
-}
-
-icon {
-  &.noun-cross {
-    display: block;
-    width: 30px;
-    height: 30px;
-    background-position: center;
-    background-size: cover;
-    background-image: url("../icons/noun-cross.svg");
-  }
-  &.noun-arrow-right {
-    display: block;
-    width: 55px;
-    height: 40px;
-    background-position: center;
-    background-size: cover;
-    background-image: url("../icons/noun-arrow-right.svg");
-
-  }
-  &.noun-arrow-left {
-    display: block;
-    width: 55px;
-    height: 40px;
-    background-position: center;
-    background-size: cover;
-    transform: rotate(180deg);
-    background-image: url("../icons/noun-arrow-right.svg");
-    
-  }
-}
 
 #attract {
   position: fixed;
@@ -174,16 +81,4 @@ icon {
       line-height: 1.3em;
     }
   }
-}
-
-marker {
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 50px;
-  border: 4px solid $white;
-  border-radius: 50%;
-  background: none;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
 }
